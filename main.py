@@ -83,7 +83,7 @@ transform = transforms.Compose([
 import torchvision.datasets as datasets
 folder_dataset = datasets.ImageFolder(root="./Training/Training")
 dataset_imgs = folder_dataset.imgs  # list of (filepath, class)
-@app.route("/detect_and_identify", methods=["GET", "POST"])
+@app.route("/detect_and_ideantify", methods=["GET", "POST"])
 def detect_and_identify():
 
     if 'image' not in request.files:
